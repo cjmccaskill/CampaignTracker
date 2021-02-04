@@ -25,7 +25,8 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var saveLogButton: UIBarButtonItem!
     @IBOutlet weak var scrollView: UIScrollView!
-
+    @IBOutlet weak var scrollContentView: UIView!
+    
     weak var delegate: InputFormDelegate?
     
     var campaignTitleText: String = ""
@@ -44,6 +45,7 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
         configureFormInputs()
         createToolBar()
         observeKeyboard()
+        configureBackgroundTap()
     }
     
     func configureForEdit(adventure: Adventure) {
@@ -188,7 +190,16 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
         noteTextView.inputAccessoryView = toolbar
     }
     
+    func configureBackgroundTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollContentView.addGestureRecognizer(tap)
+    }
+    
     @objc func hideKeyboard() {
         noteTextView.resignFirstResponder()
+        campaignTitleTextField.resignFirstResponder()
+        adventureStoryTextField.resignFirstResponder()
+        characterNameTextField.resignFirstResponder()
+        characterTypeTextField.resignFirstResponder()
     }
 }

@@ -107,7 +107,7 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
     
     func dateOfPlaySet(date: Date) {
         self.date = date
-        self.dateLabel.text = date.getDayAndMonth()
+        self.dateLabel.text = date.getFormattedDateString()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -181,7 +181,7 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
         noteTextView.text = noteText
         noteTextView.returnKeyType = .default
         
-        dateLabel.text = date?.getDayAndMonth()
+        dateLabel.text = date?.getFormattedDateString()
         
         if isEdit {
             saveLogButton.title = "Save Edits"

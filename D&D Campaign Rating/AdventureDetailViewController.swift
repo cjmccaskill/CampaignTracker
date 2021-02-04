@@ -42,7 +42,7 @@ class AdventureDetailViewController: UIViewController, InputFormDelegate {
         self.adventureStory = adventure.adventureStory
         self.rating = String(describing: adventure.rating)
         self.storyLog = adventure.note
-        self.character = adventure.characterName + " the " + adventure.characterType
+        self.character = adventure.characterName + " - " + adventure.characterType
         self.date = adventure.playDate
     }
     
@@ -76,7 +76,7 @@ class AdventureDetailViewController: UIViewController, InputFormDelegate {
     func configureLabels() {
         navBarTitle.title = adventureStory
         campaignTitleLabel.text = campaignTitle
-        datePlayedLabel.text = date?.getDayAndMonth()
+        datePlayedLabel.text = date?.getFormattedDateString()
         ratingLabel.text = rating
         storyLogLabel.text = storyLog
         characterLabel.text = character

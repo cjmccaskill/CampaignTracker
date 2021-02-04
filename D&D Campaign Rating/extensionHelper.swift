@@ -15,8 +15,8 @@ extension Date {
         return dateFormat.string(from: self)
     }
     
-    func getDayAndMonth() -> String {
-        let format = "EEEE, MMM d, yyyy"
+    func getFormattedDateString() -> String {
+        let format = "MMM d, yyyy"
         return self.getFormattedDate(format: format)
     }
 }

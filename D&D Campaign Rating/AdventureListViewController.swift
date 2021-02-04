@@ -76,7 +76,7 @@ class AdventureListViewController: UIViewController, InputFormDelegate, DetailsD
             return UITableViewCell()
         }
         let adventure = adventureStore.getAdventures()[indexPath.row]
-        cell.configure(dateText: adventure.playDate.getDayAndMonth(), adventure: adventure.adventureStory)
+        cell.configure(dateText: adventure.playDate.getFormattedDateString(), adventure: adventure.adventureStory)
         return cell
     }
     

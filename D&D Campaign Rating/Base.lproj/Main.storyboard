@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D&amp;D Adventures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-1i-KXs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaign Adventures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-1i-KXs">
                                 <rect key="frame" x="20" y="0.0" width="290" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="uVZ-yz-VfY"/>
@@ -401,7 +401,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="38T-Mz-fQV" userLabel="Story Log Text View">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="38T-Mz-fQV" userLabel="Story Log Text View">
                                         <rect key="frame" x="25" y="36" width="270" height="200"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -519,6 +519,7 @@
                         <outlet property="datePlayedLabel" destination="A7c-Zn-pem" id="enj-Lo-bgy"/>
                         <outlet property="navBarTitle" destination="XuS-Vq-lN0" id="uiZ-gH-IhS"/>
                         <outlet property="ratingLabel" destination="Scg-z6-A6f" id="QXz-P6-1nF"/>
+                        <outlet property="storyLogTextView" destination="38T-Mz-fQV" id="StU-9K-agJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvf-jl-2ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

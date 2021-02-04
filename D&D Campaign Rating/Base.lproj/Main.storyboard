@@ -302,9 +302,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adventureStoryLabel" destination="OIv-qf-oqE" id="Fbo-69-tsE"/>
                         <outlet property="adventureStoryTextField" destination="41w-OS-qUW" id="wW1-Do-Ku9"/>
+                        <outlet property="campaignTitleLabel" destination="TOz-Be-cBF" id="e2I-4K-Ieh"/>
                         <outlet property="campaignTitleTextField" destination="upT-7N-SEh" id="whm-ar-aAM"/>
+                        <outlet property="characterNameLabel" destination="06h-UQ-D5P" id="wpC-xd-f4i"/>
                         <outlet property="characterNameTextField" destination="CIn-vm-LBM" id="dav-Ra-F2U"/>
+                        <outlet property="characterTypeLabel" destination="zy1-Xq-TYX" id="ded-ig-U3U"/>
                         <outlet property="characterTypeTextField" destination="b6p-Zu-Frq" id="pjs-fy-W6R"/>
                         <outlet property="dateLabel" destination="NjZ-WS-06X" id="HYY-Jc-Tui"/>
                         <outlet property="navigationBar" destination="vPl-YI-DpU" id="h3F-Y7-LF6"/>

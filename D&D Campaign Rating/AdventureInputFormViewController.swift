@@ -26,6 +26,11 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
     @IBOutlet weak var saveLogButton: UIBarButtonItem!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scrollContentView: UIView!
+    @IBOutlet weak var campaignTitleLabel: UILabel!
+    @IBOutlet weak var adventureStoryLabel: UILabel!
+    @IBOutlet weak var characterNameLabel: UILabel!
+    @IBOutlet weak var characterTypeLabel: UILabel!
+    
     
     weak var delegate: InputFormDelegate?
     
@@ -76,6 +81,10 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
     @IBAction func logOrEditAdventure(sender: UIBarButtonItem) {
         recordTextFieldText()
         
+        guard areTextFieldsValid() else {
+            return
+        }
+        
         var adventureId: String
         if sender.title == "Log"{
             adventureId = String(describing: Date())
@@ -106,6 +115,34 @@ class AdventureInputFormViewController: UIViewController, DatePickerDelegate, UI
             return
         }
         destinationVC.delegate = self
+    }
+    
+    func areTextFieldsValid() -> Bool {
+        var isValid = true
+        if campaignTitleTextField.text == "" {
+            campaignTitleTextField.placeholder = "required"
+            campaignTitleLabel.textColor = .red
+            isValid = false
+        }
+        
+        if adventureStoryTextField.text == "" {
+            adventureStoryTextField.placeholder = "required"
+            adventureStoryLabel.textColor = .red
+            isValid = false
+        }
+        
+        if characterNameTextField.text == "" {
+            characterNameTextField.placeholder = "required"
+            characterNameLabel.textColor = .red
+            isValid = false
+        }
+        
+        if characterTypeTextField.text == "" {
+            characterTypeTextField.placeholder = "required"
+            characterTypeLabel.textColor = .red
+            isValid = false
+        }
+        return isValid
     }
     
     func recordTextFieldText() {

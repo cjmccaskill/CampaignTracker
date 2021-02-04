@@ -18,9 +18,9 @@ class AdventureDetailViewController: UIViewController, InputFormDelegate {
     @IBOutlet weak var campaignTitleLabel: UILabel!
     @IBOutlet weak var datePlayedLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var storyLogLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     @IBOutlet weak var navBarTitle: UINavigationItem!
+    @IBOutlet weak var storyLogTextField: UITextField!
     
     var campaignTitle = ""
     var adventureStory = ""
@@ -78,7 +78,7 @@ class AdventureDetailViewController: UIViewController, InputFormDelegate {
         campaignTitleLabel.text = campaignTitle
         datePlayedLabel.text = date?.getFormattedDateString()
         ratingLabel.text = rating
-        storyLogLabel.text = storyLog
+//        storyLogLabel.text = storyLog
         characterLabel.text = character
     }
 }

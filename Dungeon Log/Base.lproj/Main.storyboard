@@ -74,7 +74,7 @@
         <!--Adventure Input Form View Controller-->
         <scene sceneID="Tqa-1J-CsV">
             <objects>
-                <viewController id="9hO-fn-nMK" customClass="AdventureInputFormViewController" customModule="D_D_Campaign_Rating" sceneMemberID="viewController">
+                <viewController id="9hO-fn-nMK" customClass="AdventureInputFormViewController" customModule="Dungeon_Log" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Umu-Ne-CB2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

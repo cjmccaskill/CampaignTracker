@@ -11,7 +11,7 @@
         <!--Adventure List View Controller-->
         <scene sceneID="BYH-xW-GpI">
             <objects>
-                <viewController id="yDo-mT-PxR" customClass="AdventureListViewController" customModule="D_D_Campaign_Rating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yDo-mT-PxR" customClass="AdventureListViewController" customModule="Dungeon_Log" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rBy-3Q-mBZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="addNewButtonTapped:" destination="yDo-mT-PxR" eventType="touchUpInside" id="3nL-I0-wPY"/>
+                                    <action selector="addNewButtonTapped:" destination="yDo-mT-PxR" eventType="touchUpInside" id="sNK-WS-FQb"/>
                                     <segue destination="9hO-fn-nMK" kind="presentation" identifier="recordAdventureSegue" id="zaN-pF-Wgc"/>
                                 </connections>
                             </button>
@@ -61,7 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addNewButton" destination="V46-0B-XQP" id="4sx-Uv-yAu"/>
+                        <outlet property="addNewButton" destination="V46-0B-XQP" id="3BP-HE-Adw"/>
                         <outlet property="adventureTableView" destination="cnf-iL-AcD" id="7g1-La-qIC"/>
                         <outlet property="titleLabel" destination="Jun-1i-KXs" id="EZ2-xF-70z"/>
                         <segue destination="zTr-re-2gA" kind="presentation" identifier="detailSegue" id="FmG-fp-RTO"/>
@@ -302,11 +302,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adventureStoryLabel" destination="OIv-qf-oqE" id="Fbo-69-tsE"/>
+                        <outlet property="adventureStoryLabel" destination="OIv-qf-oqE" id="pFW-BM-AFL"/>
                         <outlet property="adventureStoryTextField" destination="41w-OS-qUW" id="wW1-Do-Ku9"/>
                         <outlet property="campaignTitleLabel" destination="TOz-Be-cBF" id="e2I-4K-Ieh"/>
                         <outlet property="campaignTitleTextField" destination="upT-7N-SEh" id="whm-ar-aAM"/>
+                        <outlet property="characterNameLabel" destination="06h-UQ-D5P" id="5bC-Vy-6cx"/>
                         <outlet property="characterNameTextField" destination="CIn-vm-LBM" id="dav-Ra-F2U"/>
+                        <outlet property="characterTypeLabel" destination="zy1-Xq-TYX" id="ylm-bJ-qQy"/>
                         <outlet property="characterTypeTextField" destination="b6p-Zu-Frq" id="pjs-fy-W6R"/>
                         <outlet property="dateLabel" destination="NjZ-WS-06X" id="HYY-Jc-Tui"/>
                         <outlet property="navigationBar" destination="vPl-YI-DpU" id="h3F-Y7-LF6"/>
@@ -325,7 +327,7 @@
         <!--Date Picker View Controller-->
         <scene sceneID="wKh-cj-JRe">
             <objects>
-                <viewController id="1oL-t6-6NK" customClass="DatePickerViewController" customModule="D_D_Campaign_Rating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1oL-t6-6NK" customClass="DatePickerViewController" customModule="Dungeon_Log" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Id1-fg-QKJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +380,7 @@
         <!--Adventure Detail View Controller-->
         <scene sceneID="dLj-dS-1xt">
             <objects>
-                <viewController id="zTr-re-2gA" customClass="AdventureDetailViewController" customModule="D_D_Campaign_Rating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zTr-re-2gA" customClass="AdventureDetailViewController" customModule="Dungeon_Log" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frM-od-Tl0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

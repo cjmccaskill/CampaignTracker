@@ -1,6 +1,6 @@
 //
 //  AdventureInputFormViewController.swift
-//  D&D Campaign Rating
+//  Dungeon Log
 //
 //  Created by CJ McCaskill on 1/25/21.
 //
